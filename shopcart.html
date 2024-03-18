@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物流程</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="header-fix">
+      <div class="header">
+        <div class="header-wrap">
+          <h1>
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 1180px)" srcset="./img/logo_m.PNG" />
+                <img src="./img/LOGO.PNG" alt="" />
+              </picture>
+            </a>
+          </h1>
+          <div class="m-cartbox">
+            <a href="shopcart.html">
+              <img src="./img/cart.png" alt="" />
+            </a>
+            <a href="#">
+              <i class="bi bi-telephone" style="padding-left: 15px"></i>
+            </a>
+          </div>
+          <div class="bg01"><img src="./img/main_bg01.png" alt="" /></div>
+
+          <div class="top-box">
+            <div class="cartBox">
+              <a href="shopcart.html" class="cartToggle"
+                >我的購物車<b class="num buycar_count">0</b>項商品</a
+              >
+              <a class="orderToggle">訂單查詢</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-box">
+        <div class="nav">
+          <!--navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse left" id="navbarNav">
+                <div class="left-box">
+                  <ul class="navbar-nav menu1">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">．關於金品．</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="product.html">．產品介紹．</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">．門市據點．</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse right" id="navbarNav">
+                <div class="right-box">
+                  <ul class="navbar-nav menu2">
+                    <li class="nav-item title-news">
+                      <a class="nav-link" href="#">．最新消息．</a>
+                    </li>
+                    <li class="nav-item title-contact">
+                      <a class="nav-link" href="contact.html">．聯絡我們．</a>
+                    </li>
+                    <li class="nav-item tel title-tel">
+                      <i>(03)-8762233</i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <a href="index.html" target="_blank">
+        <img src="./img/banner.png" alt="banner"
+      /></a>
+    </div>
+    <div class="mainArea">
+      <div class="wrap">
+        <div class="contentbox row">
+          <div class="left-box col-3 product-left-box shopcart-left-box">
+            <div class="titlebox shop-titlebox">
+              <h2>
+                <em>Shopping cart</em>
+                <strong>購物結帳</strong>
+              </h2>
+            </div>
+            <div class="contentbox">
+              <ul class="step">
+                <li class="current m_step">
+                  <i class="bi bi-pencil"></i>
+                  <div class="Txt">
+                    <strong>Step <b>01</b></strong>
+                    <p>填寫訂單資訊</p>
+                  </div>
+                </li>
+                <li class="m_step">
+                  <i class="bi bi-check-lg"></i>
+                  <div class="Txt">
+                    <strong>Step <b>02</b></strong>
+                    <p>完成訂購</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="formwrap">
+                <form method="post">
+                  <div class="infoArea">
+                    <!--infoArea-->
+                    <div class="noteBox">
+                      <!-- noteBox -->
+                      <div class="title"><strong>結帳須知</strong></div>
+                      <div class="textEditor clearfix">
+                        <!--文字編輯器-->
+                        親愛的客戶您好，請務必確認訂購內容與金額，有任何問題歡迎電詢問。<br />
+                        <span style="color: #ff0000"
+                          >※&nbsp;匯完款請務必來電通知 03-8762233</span
+                        ><br />
+                        轉帳付款銀行 : 鳳林郵局<br />
+                        戶名 : 陳秋金<br />
+                        代號 : 700<br />
+                        帳號 : 0091220 0240781<br />
+                        ※
+                        完成匯款後請提供匯款資訊(含匯款人名稱、日期與金額等)，以利核查<br />
+                        <span style="color: #008080"
+                          >※ 本店免用統一發票，如需收據請於備註欄告知</span
+                        ><br />
+                        <br />
+                        <span style="font-size: 18px"
+                          ><strong
+                            ><span style="color: #000080"
+                              >【運費說明】</span
+                            ></strong
+                          ></span
+                        >
+                        <ul>
+                          <li>
+                            本島運費為購買<span style="color: #ff8c00"
+                              ><strong> </strong></span
+                            ><span style="color: #ff0000"
+                              ><strong>24件 (含) 以上免運</strong></span
+                            >，未達 24件 酌收<span style="color: #b22222">
+                              <strong>$150元</strong></span
+                            >
+                          </li>
+                          <li>
+                            涼拌豬皮<strong
+                              ><span style="color: #ff0000"
+                                >冷藏運費180元</span
+                              ></strong
+                            >
+                          </li>
+                          <li>
+                            <span style="color: #ff0000"
+                              ><strong
+                                >​外島運費為不限訂購數量，皆為
+                                <strong>$320元</strong></strong
+                              ></span
+                            >
+                          </li>
+                          <li>正常三日內到貨，最快為隔日到貨</li>
+                        </ul>
+                      </div>
+                      <!--文字編輯器-->
+                    </div>
+                    <!-- noteBox end -->
+                    <!-- 一般商品 -->
+                    <div class="itemBox">
+                      <!--itemBox-->
+                      <div class="title"><strong>選購清單</strong></div>
+                      <span id="paycar_list"
+                        ><table>
+                          <thead>
+                            <tr>
+                              <th>品項</th>
+                              <th>規格</th>
+                              <th>數量</th>
+                              <th>小計</th>
+                              <th>刪除</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="sm-pic">
+                                  <a href="#"
+                                    ><img src="./img/goods01.png" /><strong
+                                      >原味剝皮辣椒 (中辣)</strong
+                                    ></a
+                                  >
+                                </div>
+                              </td>
+                              <td>原味剝皮辣椒 (單罐)</td>
+                              <td>
+                                <input
+                                  type="number"
+                                  max="999"
+                                  style="max-width: 45px"
+                                  required
+                                />
+                              </td>
+                              <td>$150</td>
+                              <td>
+                                <a
+                                  class="btn_remove"
+                                  style="cursor: pointer"
+                                  onclick="open_loading_status('loading_icon_image');jq_post_noloading('../pay/act.php','act=2&amp;btn_buy_type=del_pay&amp;index_id=15&amp;index_price_id=596','iframe_string');"
+                                  ><i
+                                    class="bi bi-x-lg"
+                                    style="color: red; padding-left: 15px"
+                                  ></i
+                                ></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <!--section end-->
+                        <input
+                          name="data_m_fee"
+                          type="hidden"
+                          id="data_m_fee"
+                          value="0"
+                        />
+                        <input
+                          name="data_m_discount"
+                          type="hidden"
+                          id="data_m_discount"
+                          value="1"
+                        />
+                        <input
+                          name="data_m_sendpay"
+                          type="hidden"
+                          id="data_m_sendpay"
+                          value="150"
+                        />
+                        <input
+                          name="data_m_totalmoney"
+                          type="hidden"
+                          id="data_m_totalmoney"
+                          value="150"
+                        />
+                        <input
+                          name="data_m_org_totalmoney"
+                          type="hidden"
+                          id="data_m_org_totalmoney"
+                          value="150"
+                        />
+                        <input
+                          name="data_m_all_totalmoney"
+                          type="hidden"
+                          id="data_m_all_totalmoney"
+                          value="300"
+                        />
+                      </span>
+                      <!--選購清單//-->
+                      <script type="text/javascript">
+                        $(function () {
+                          paylist_fun();
+                        });
+                        function paylist_fun() {
+                          open_loading_status("loading_icon_image");
+
+                          jq_post_noloading(
+                            "../pay/act.php",
+                            "act=41&island_type=" +
+                              $("#island_type").val() +
+                              "&paytype=" +
+                              $(
+                                "#order_buy_form input[name='data_m_payment_id']:radio:checked:enabled"
+                              ).val(),
+                            "paycar_list"
+                          );
+                        }
+                      </script>
+                    </div>
+                    <!--itemBox end-->
+                    <!-- 加購商品 -->
+                    <div class="itemBox" id="extra_list" style="display: none">
+                      <!--itemBox-->
+                      <div class="title"><strong>加購清單</strong></div>
+                      <span id="paycar_plus_list"></span>
+                      <!--選購清單//-->
+                      <script type="text/javascript">
+                        $(function () {});
+                        function paylist_plus_fun() {
+                          //open_loading_status("loading_icon_image");
+                          jq_post_noloading(
+                            "../pay/act.php",
+                            "act=42",
+                            "paycar_plus_list"
+                          );
+                        }
+                      </script>
+                    </div>
+                    <!--itemBox end-->
+                    <!--付款方式-->
+                    <div class="section">
+                      <!--section-->
+                      <div class="title"><strong>付款方式</strong></div>
+                      <div class="box clearfix">
+                        <!--box-->
+                        <div class="radioSet" data-target="payType">
+                          <!-- radioSet -->
+                          <label
+                            ><input
+                              type="radio"
+                              name="data_m_payment_id"
+                              checked=""
+                              value="2"
+                              onclick="paylist_fun()"
+                            />轉帳付款</label
+                          >
+                          <label
+                            ><input
+                              type="radio"
+                              name="data_m_payment_id"
+                              value="1"
+                              onclick="paylist_fun()"
+                            />貨到收款</label
+                          >
+                        </div>
+                        <!--radiSet end-->
+                        <ul class="payType">
+                          <li>
+                            購買滿三件商品才有宅配喔<br />
+                            親愛的客戶您好，請務必確認訂購內容與金額，有任何問題歡迎電詢問。<br />
+                            ※&nbsp;<span style="color: #ff0000"
+                              >匯完款請務必來電通知 03-8762233</span
+                            ><br />
+                            轉帳付款銀行 : 郵局<br />
+                            戶名 : 陳秋金<br />
+                            代號 : 700<br />
+                            帳號 : 0091220-0240781<br />
+                            ※
+                            <span style="color: #ff0000"
+                              >完成匯款後請提供匯款資訊(含匯款人名稱、日期與金額等)，以利核查</span
+                            ><br />
+                            ※ 本店免用統一發票，如需收據請於備註欄告知
+                          </li>
+                        </ul>
+                      </div>
+                      <!--box end-->
+                    </div>
+                    <!--section end-->
+                    <!--統一發票-->
+                    <!--訂購人-->
+                    <div class="section">
+                      <!--section-->
+                      <div class="title"><strong>訂購人資料</strong></div>
+                      <div class="box clearfix row">
+                        <!--box-->
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left">
+                            <em>※</em>訂購人姓名
+                            <label
+                              ><input
+                                name="data_m_sex"
+                                type="radio"
+                                value="0"
+                                checked=""
+                              />先生</label
+                            >
+                            <label
+                              ><input
+                                name="data_m_sex"
+                                type="radio"
+                                value="1"
+                              />小姐</label
+                            >
+                          </div>
+                          <div class="right">
+                            <input
+                              name="data_m_name"
+                              type="text"
+                              class="require"
+                              id="data_m_name"
+                              value=""
+                              data-note="訂購人姓名"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left">連絡電話</div>
+                          <div class="right">
+                            <input
+                              name="data_m_tel"
+                              type="text"
+                              id="data_m_tel"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left">
+                            <em>※</em>行動電話
+                            <b class="note">※查詢訂單必須輸入的欄位</b>
+                          </div>
+                          <div class="right">
+                            <input
+                              type="text"
+                              id="data_m_mtel"
+                              name="data_m_mtel"
+                              class="mobileCheck"
+                              data-note="訂購人行動電話"
+                              value=""
+                            />
+                            <b class="note">※輸入格式為 0912345678 (共10碼)</b>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left">
+                            <em>※</em>電子信箱
+                            <b class="note">※訂單明細收件信箱</b>
+                          </div>
+                          <div class="right">
+                            <input
+                              type="text"
+                              id="data_m_email"
+                              name="data_m_email"
+                              class="require"
+                              data-note="訂購人電子信箱"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <div class="left"><em>※</em>聯絡地址</div>
+                          <div
+                            class="right address"
+                            role="tw-city-selector"
+                            data-show-zipcode
+                          >
+                            <script
+                              language="javascript"
+                              src="../database/function/ui/jquery.twzipcode.min.js"
+                            ></script>
+                            <span id="container"
+                              ><select name="data_m_city">
+                                <option value="">縣市</option>
+                                <option value="基隆市">基隆市</option>
+                                <option value="台北市">台北市</option>
+                                <option value="新北市">新北市</option>
+                                <option value="宜蘭縣">宜蘭縣</option>
+                                <option value="新竹市">新竹市</option>
+                                <option value="新竹縣">新竹縣</option>
+                                <option value="桃園市">桃園市</option>
+                                <option value="苗栗縣">苗栗縣</option>
+                                <option value="台中市">台中市</option>
+                                <option value="彰化縣">彰化縣</option>
+                                <option value="南投縣">南投縣</option>
+                                <option value="嘉義市">嘉義市</option>
+                                <option value="嘉義縣">嘉義縣</option>
+                                <option value="雲林縣">雲林縣</option>
+                                <option value="台南市">台南市</option>
+                                <option value="高雄市">高雄市</option>
+                                <option value="屏東縣">屏東縣</option>
+                                <option value="台東縣">台東縣</option>
+                                <option value="花蓮縣">花蓮縣</option>
+                                <option value="金門縣">金門縣</option>
+                                <option value="連江縣">連江縣</option>
+                                <option value="澎湖縣">澎湖縣</option></select
+                              ><select name="data_m_town">
+                                <option value="">鄉鎮市區</option></select
+                              ><input
+                                type="text"
+                                name="data_m_zip"
+                                placeholder="郵遞區號"
+                            /></span>
+                            <script language="javascript">
+                              $(function () {
+                                $("#container").twzipcode({
+                                  countyName: "data_m_city",
+                                  districtName: "data_m_town",
+                                  zipcodeName: "data_m_zip",
+                                  countySel: "", //縣市預設值
+                                  districtSel: "", //鄉鎮市區預設值
+                                  zipcodeSel: "",
+                                });
+                                /*$("#container select").css('margin-right','4px');
+                                                              $("#container select[name=data_m_city]").css('width','120px');
+                                                              $("#container select[name=data_m_town]").css('width','120px');
+                                                              $("#container input[name=data_m_zip]").css('width','80px');
+                                                              $("#container input[name=data_m_zip]").show();*/
+                              });
+                              function counter_number(data) {
+                                if (data.value.match(/[^.|^0-9]/g)) {
+                                  alert("欄位值必須為數字!!");
+                                  data.value = "";
+                                  data.focus();
+                                }
+                              }
+                            </script>
+
+                            <input
+                              type="text"
+                              id="data_m_addr"
+                              name="data_m_addr"
+                              class="require"
+                              data-note="訂購人聯絡地址"
+                              value=""
+                            /><!--本島 0 or 外島 1//-->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- box end -->
+                    </div>
+                    <!--section end-->
+                    <!--收件人-->
+                    <div class="section">
+                      <!--section-->
+                      <div class="title"><strong>收件人資料</strong></div>
+                      <div class="box clearfix row">
+                        <!--box-->
+                        <div class="copy_type">
+                          <input
+                            name="copy_type"
+                            type="hidden"
+                            id="copy_type"
+                            value="0"
+                          /><label
+                            class="same"
+                            style="cursor: pointer"
+                            onclick=" if($('#copy_type').val()=='0'){$('#copy_type').val('1');copy_detail();}else{$('#copy_type').val('0');clear_detail();}"
+                            >同訂購人資料</label
+                          >
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left">
+                            <em>※</em>訂購人姓名
+                            <label
+                              ><input
+                                name="data_m_ssex"
+                                type="radio"
+                                value="0"
+                                checked="checked"
+                              />先生</label
+                            >
+                            <label
+                              ><input
+                                name="data_m_ssex"
+                                type="radio"
+                                value="1"
+                              />小姐</label
+                            >
+                          </div>
+                          <div class="right">
+                            <input
+                              type="text"
+                              id="data_m_sname"
+                              name="data_m_sname"
+                              class="require"
+                              data-note="收件人姓名"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left">連絡電話</div>
+                          <div class="right">
+                            <input
+                              type="text"
+                              id="data_m_stel"
+                              name="data_m_stel"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left"><em>※</em>行動電話</div>
+                          <div class="right">
+                            <input
+                              type="text"
+                              id="data_m_smtel"
+                              name="data_m_smtel"
+                              class="mobileCheck"
+                              data-note="收件人行動電話"
+                            />
+                            <b class="note">※輸入格式為 0912345678 (共10碼)</b>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                          <div class="left">
+                            <em>※</em>電子信箱<b class="note"
+                              >※訂單明細收件信箱</b
+                            >
+                          </div>
+                          <div class="right">
+                            <input
+                              type="text"
+                              id="data_m_semail"
+                              name="data_m_semail"
+                              class="require"
+                              data-note="收件人電子信箱"
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <div class="left"><em>※</em>送貨地址</div>
+                          <div class="right address">
+                            <span id="container_s"
+                              ><select name="data_m_scity">
+                                <option value="">縣市</option>
+                                <option value="基隆市">基隆市</option>
+                                <option value="台北市">台北市</option>
+                                <option value="新北市">新北市</option>
+                                <option value="宜蘭縣">宜蘭縣</option>
+                                <option value="新竹市">新竹市</option>
+                                <option value="新竹縣">新竹縣</option>
+                                <option value="桃園市">桃園市</option>
+                                <option value="苗栗縣">苗栗縣</option>
+                                <option value="台中市">台中市</option>
+                                <option value="彰化縣">彰化縣</option>
+                                <option value="南投縣">南投縣</option>
+                                <option value="嘉義市">嘉義市</option>
+                                <option value="嘉義縣">嘉義縣</option>
+                                <option value="雲林縣">雲林縣</option>
+                                <option value="台南市">台南市</option>
+                                <option value="高雄市">高雄市</option>
+                                <option value="屏東縣">屏東縣</option>
+                                <option value="台東縣">台東縣</option>
+                                <option value="花蓮縣">花蓮縣</option>
+                                <option value="金門縣">金門縣</option>
+                                <option value="連江縣">連江縣</option>
+                                <option value="澎湖縣">澎湖縣</option></select
+                              ><select name="data_m_stown">
+                                <option value="">鄉鎮市區</option></select
+                              ><input
+                                type="text"
+                                name="data_m_szip"
+                                placeholder="郵遞區號"
+                            /></span>
+
+                            <input
+                              type="text"
+                              id="data_m_saddr"
+                              name="data_m_saddr"
+                              class="require"
+                              data-note="收件人送貨地址"
+                            />
+                          </div>
+                          <input
+                            type="hidden"
+                            id="island_type"
+                            name="island_type"
+                            value="0"
+                          />
+                        </div>
+                        <div class="col-6">
+                          <div class="left">
+                            <em>※</em>預計配達日<b class="note"
+                              >※將請物流商盡力配合</b
+                            >
+                          </div>
+                          <div class="right">
+                            <input
+                              name="data_m_delivery_date"
+                              type="text"
+                              id="data_m_delivery_date"
+                              class="datepicker require hasDatepicker"
+                              data-note="預計配達日"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="left"><em>※</em>配達時段</div>
+                          <div class="right">
+                            <select
+                              name="data_m_delivery_time"
+                              id="data_m_delivery_time"
+                              class="require"
+                              data-note="配達時段"
+                            >
+                              <option value="">選擇時段</option>
+                              <option value="不指定">不指定</option>
+                              <option value="13:00 前">13:00 前</option>
+                              <option value="14:00 - 18:00">
+                                14:00 - 18:00
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="g-ml-12">
+                          <div class="left">備註</div>
+                          <div class="right">
+                            <textarea
+                              id="data_m_exp"
+                              name="data_m_exp"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- box end -->
+                    </div>
+                    <!--section end-->
+                  </div>
+                  <div class="priceArea">
+                    <!--priceArea-->
+                    <div class="fixBox">
+                      <!--fixBox-->
+                      <div class="totalArea clearfix">
+                        <!--totalArea-->
+                        <h3>訂單總計</h3>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>購物總計</td>
+                              <td>NTD.$<span id="total_pr_costs">150</span></td>
+                            </tr>
+                            <tr>
+                              <td>折扣</td>
+                              <td>NTD.-$<span id="discount_cost">0</span></td>
+                            </tr>
+                            <tr>
+                              <td>物流費</td>
+                              <td>NTD.$<span id="shipping_costs">150</span></td>
+                            </tr>
+                            <tr id="fee_html_code" style="display: none">
+                              <td>手續費</td>
+                              <td>NTD.$<span id="fee_cost"></span></td>
+                            </tr>
+                            <tr class="total">
+                              <td>總計</td>
+                              <td>
+                                NTD.$<span id="total_all_costs">300</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--totalArea end-->
+                      <div class="btnArea">
+                        <!--btnArea-->
+                        <a href="product.html" class="btn_color1"
+                          ><i class="fa fa-fangel-left"></i>繼續購物</a
+                        >
+                        <a href="finish.html" class="btn_color1" id="submit_btn"
+                          >訂單送出</a
+                        >
+                      </div>
+                      <!--btnArea end-->
+                    </div>
+                    <!--fixBox end-->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script>
+      new TwCitySelector();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // 使用媒體查詢檢查螢幕寬度
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        // 在桌面尺寸上啟用捲動事件監聽器
+        window.addEventListener("scroll", function () {
+          var bg01 = document.querySelector(".bg01");
+
+          // 如果用戶捲動的距離大於100px，隱藏背景
+          if (window.scrollY > 100) {
+            bg01.style.top = "-200px";
+          } else {
+            // 否則顯示背景
+            bg01.style.top = "0";
+          }
+        });
+      }
+    </script>
+    <script>
+      // 使用媒體查詢檢查螢幕寬度
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        // 在桌面尺寸上啟用捲動事件監聽器
+        window.addEventListener("scroll", function () {
+          var headerFix = document.querySelector(".header-fix");
+
+          // 如果用戶捲動的距離大於100px，向上縮減10%
+          if (window.scrollY > 100) {
+            headerFix.style.top = "-8%";
+          } else {
+            // 否則恢復原狀
+            headerFix.style.top = "0";
+          }
+        });
+      }
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var priceArea = document.querySelector(".priceArea");
+        var contentbox = document.querySelector(".contentbox");
+
+        // 計算.priceArea元素相對於.contentbox元素的距離
+        var distanceFromTop = contentbox.getBoundingClientRect().top;
+
+        // 如果距離小於等於20%，則將.priceArea元素的top屬性設置為20%
+        if (distanceFromTop <= window.innerHeight * 0.2) {
+          priceArea.style.top = "20%";
+        } else {
+          // 否則將.priceArea元素的top屬性設置為距離.contentbox元素頂部的距離
+          priceArea.style.top =
+            (distanceFromTop / window.innerHeight) * 100 + "%";
+        }
+      });
+    </script>
+  </body>
+</html>

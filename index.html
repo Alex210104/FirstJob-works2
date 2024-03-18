@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>金品醬園</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div class="header-fix">
+      <div class="header">
+        <div class="header-wrap">
+          <h1>
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 1180px)" srcset="./img/logo_m.PNG" />
+                <img src="./img/LOGO.PNG" alt="" />
+              </picture>
+            </a>
+          </h1>
+          <div class="m-cartbox">
+            <a href="shopcart.html">
+              <img src="./img/cart.png" alt="" />
+            </a>
+            <a href="#">
+              <i class="bi bi-telephone" style="padding-left: 15px"></i>
+            </a>
+          </div>
+          <div class="bg01"><img src="./img/main_bg01.png" alt="" /></div>
+
+          <div class="top-box">
+            <div class="cartBox">
+              <a href="shopcart.html" class="cartToggle"
+                >我的購物車<b class="num buycar_count">0</b>項商品</a
+              >
+              <a class="orderToggle">訂單查詢</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-box">
+        <div class="nav">
+          <!--navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse left" id="navbarNav">
+                <div class="left-box">
+                  <ul class="navbar-nav menu1">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">．關於金品．</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="product.html">．產品介紹．</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">．門市據點．</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse right" id="navbarNav">
+                <div class="right-box">
+                  <ul class="navbar-nav menu2">
+                    <li class="nav-item title-news">
+                      <a class="nav-link" href="#">．最新消息．</a>
+                    </li>
+                    <li class="nav-item title-contact">
+                      <a class="nav-link" href="contact.html">．聯絡我們．</a>
+                    </li>
+                    <li class="nav-item tel title-tel">
+                      <i>(03)-8762233</i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <a href="index.html" target="_blank">
+        <img src="./img/banner.png" alt="banner"
+      /></a>
+    </div>
+
+    <div class="mainArea">
+      <div class="marqueeArea">
+        <div class="news-wrap">
+          <h2><strong>News</strong><em>最新消息</em></h2>
+          <div class="marqueeBox">
+            <div class="marqueeWrapper">
+              <ul class="marquee" id="marqueeTxt">
+                <li>
+                  <div class="news-item">
+                    <div class="date">2019 / 05 / 25</div>
+                    <h3>
+                      <a href="#"
+                        >獲選2019年花蓮百大伴手禮 唯一剝皮辣椒產品獲選廠商</a
+                      >
+                    </h3>
+                  </div>
+                </li>
+                <li>
+                  <div class="news-item">
+                    <div class="date">2017 / 09 / 27</div>
+                    <h3>
+                      <a href="#"
+                        >剝皮辣椒商品無添加防腐劑 收到貨需冷藏
+                        開罐後請於一周內食用完畢</a
+                      >
+                    </h3>
+                  </div>
+                </li>
+                <li>
+                  <div class="news-item">
+                    <div class="date">2016 / 07 / 13</div>
+                    <h3>
+                      <a href="news/"
+                        >眾多媒體與部落客推薦報導的金品醬園，詳細資訊請看最新消息!</a
+                      >
+                    </h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutArea">
+        <div class="row">
+          <div class="movieBox col-md-6">
+            <h2><strong>Movie</strong></h2>
+            <h3><strong>媒體報導分享</strong></h3>
+            <div class="media-box">
+              <div class="youtube">
+                <div class="video-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/kRiTVDQVjAY?si=pzUCBy3tK45xdDbV&amp;start=1520"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aboutBox col-md-6">
+            <div class="row">
+              <div class="Txt col-md-6">
+                <h3>
+                  金品醬園剝皮辣椒<br />將花蓮縣鳳林鎮的道地名產<br />推向全國的舞台！
+                </h3>
+                <p>
+                  金品剝皮辣椒成立於民國82年，由陳秋金老闆夫妻精心研發而成，為了確保產品品質及穩定度，陳老闆自行研發了全台灣唯一一台剝皮辣椒機器，加上乾淨的廠房以及嚴格的品管，使得金品剝皮辣椒成為市場上的第一品牌!
+                </p>
+                <div class="button">
+                  <a href="about/">- more -</a>
+                </div>
+              </div>
+              <div class="Img col-md-6 m-block">
+                <img
+                  src="./img/indexPIC.png"
+                  alt="金品醬園剝皮辣椒 <br/>將花蓮縣鳳林鎮的道地名產 <br/>推向全國的舞台！"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="featureArea">
+        <div class="wrapbox">
+          <h2><strong>Hot foods</strong><em>推薦商品</em></h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="Img">
+                    <a href="#" title="原味剝皮辣椒(中辣)"
+                      ><img src="./img/goods01.png" alt="原味剝皮辣椒(中辣)"
+                    /></a>
+                    <div class="ribbon_hot"></div>
+                  </div>
+
+                  <div class="Txt">
+                    <h3>
+                      <strong
+                        ><a
+                          href="product/ins.php?index_id=15"
+                          title="原味剝皮辣椒(中辣)"
+                          >原味剝皮辣椒(中辣)</a
+                        ></strong
+                      >
+                    </h3>
+                    <p class="ellipsis">
+                      這支產品就是所有剝皮辣椒的起源!「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品。
+                    </p>
+                    <div class="price">
+                      <strong class="discount">NT $<b>150</b></strong>
+                    </div>
+                    <div class="btn">
+                      <a href="product/ins.php?index_id=15">立即購買</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="Img">
+                    <a href="#" title="原味剝皮辣椒(中辣)"
+                      ><img src="./img/goods01.png" alt="原味剝皮辣椒(中辣)"
+                    /></a>
+                    <div class="ribbon_hot"></div>
+                  </div>
+
+                  <div class="Txt">
+                    <h3>
+                      <strong
+                        ><a
+                          href="product/ins.php?index_id=15"
+                          title="原味剝皮辣椒(中辣)"
+                          >原味剝皮辣椒(中辣)</a
+                        ></strong
+                      >
+                    </h3>
+                    <p class="ellipsis">
+                      這支產品就是所有剝皮辣椒的起源!「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品。
+                    </p>
+                    <div class="price">
+                      <strong class="discount">NT $<b>150</b></strong>
+                    </div>
+                    <div class="btn">
+                      <a href="product/ins.php?index_id=15">立即購買</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item clearfix">
+                  <div class="Img">
+                    <a href="#" title="原味剝皮辣椒(中辣)"
+                      ><img src="./img/goods01.png" alt="原味剝皮辣椒(中辣)"
+                    /></a>
+                    <div class="ribbon_hot"></div>
+                  </div>
+
+                  <div class="Txt">
+                    <h3>
+                      <strong
+                        ><a
+                          href="product/ins.php?index_id=15"
+                          title="原味剝皮辣椒(中辣)"
+                          >原味剝皮辣椒(中辣)</a
+                        ></strong
+                      >
+                    </h3>
+                    <p class="ellipsis">
+                      這支產品就是所有剝皮辣椒的起源!「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品。
+                    </p>
+                    <div class="price">
+                      <strong class="discount">NT $<b>150</b></strong>
+                    </div>
+                    <div class="btn">
+                      <a href="product/ins.php?index_id=15">立即購買</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item clearfix">
+                  <div class="Img">
+                    <a href="#" title="原味剝皮辣椒(中辣)"
+                      ><img src="./img/goods01.png" alt="原味剝皮辣椒(中辣)"
+                    /></a>
+                    <div class="ribbon_hot"></div>
+                  </div>
+
+                  <div class="Txt">
+                    <h3>
+                      <strong
+                        ><a
+                          href="product/ins.php?index_id=15"
+                          title="原味剝皮辣椒(中辣)"
+                          >原味剝皮辣椒(中辣)</a
+                        ></strong
+                      >
+                    </h3>
+                    <p class="ellipsis">
+                      這支產品就是所有剝皮辣椒的起源!「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品。
+                    </p>
+                    <div class="price">
+                      <strong class="discount">NT $<b>150</b></strong>
+                    </div>
+                    <div class="btn">
+                      <a href="product/ins.php?index_id=15">立即購買</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item clearfix">
+                  <div class="Img">
+                    <a href="#" title="原味剝皮辣椒(中辣)"
+                      ><img src="./img/goods01.png" alt="原味剝皮辣椒(中辣)"
+                    /></a>
+                    <div class="ribbon_hot"></div>
+                  </div>
+
+                  <div class="Txt">
+                    <h3>
+                      <strong
+                        ><a
+                          href="product/ins.php?index_id=15"
+                          title="原味剝皮辣椒(中辣)"
+                          >原味剝皮辣椒(中辣)</a
+                        ></strong
+                      >
+                    </h3>
+                    <p class="ellipsis">
+                      這支產品就是所有剝皮辣椒的起源!「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品。
+                    </p>
+                    <div class="price">
+                      <strong class="discount">NT $<b>150</b></strong>
+                    </div>
+                    <div class="btn">
+                      <a href="product/ins.php?index_id=15">立即購買</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item clearfix">
+                  <div class="Img">
+                    <a href="#" title="原味剝皮辣椒(中辣)"
+                      ><img src="./img/goods01.png" alt="原味剝皮辣椒(中辣)"
+                    /></a>
+                    <div class="ribbon_hot"></div>
+                  </div>
+
+                  <div class="Txt">
+                    <h3>
+                      <strong
+                        ><a
+                          href="product/ins.php?index_id=15"
+                          title="原味剝皮辣椒(中辣)"
+                          >原味剝皮辣椒(中辣)</a
+                        ></strong
+                      >
+                    </h3>
+                    <p class="ellipsis">
+                      這支產品就是所有剝皮辣椒的起源!「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品。
+                    </p>
+                    <div class="price">
+                      <strong class="discount">NT $<b>150</b></strong>
+                    </div>
+                    <div class="btn">
+                      <a href="product/ins.php?index_id=15">立即購買</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item clearfix">
+                  <div class="Img">
+                    <a href="#" title="原味剝皮辣椒(中辣)"
+                      ><img src="./img/goods03.png" alt="原味剝皮辣椒(中辣)"
+                    /></a>
+                    <div class="ribbon_hot"></div>
+                  </div>
+
+                  <div class="Txt">
+                    <h3>
+                      <strong
+                        ><a
+                          href="product/ins.php?index_id=15"
+                          title="原味剝皮辣椒(中辣)"
+                          >原味剝皮辣椒(中辣)</a
+                        ></strong
+                      >
+                    </h3>
+                    <p class="ellipsis">
+                      這支產品就是所有剝皮辣椒的起源!「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品。
+                    </p>
+                    <div class="price">
+                      <strong class="discount">NT $<b>150</b></strong>
+                    </div>
+                    <div class="btn">
+                      <a href="product/ins.php?index_id=15">立即購買</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        direction: getDirection(),
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          760: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
+
+      function getDirection() {
+        return window.innerWidth <= 760 ? "vertical" : "horizontal";
+      }
+    </script>
+    <script>
+      // 使用媒體查詢檢查螢幕寬度
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        // 在桌面尺寸上啟用捲動事件監聽器
+        window.addEventListener("scroll", function () {
+          var bg01 = document.querySelector(".bg01");
+
+          // 如果用戶捲動的距離大於100px，隱藏背景
+          if (window.scrollY > 100) {
+            bg01.style.top = "-200px";
+          } else {
+            // 否則顯示背景
+            bg01.style.top = "0";
+          }
+        });
+      }
+    </script>
+    <script>
+      // 使用媒體查詢檢查螢幕寬度
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        // 在桌面尺寸上啟用捲動事件監聽器
+        window.addEventListener("scroll", function () {
+          var headerFix = document.querySelector(".header-fix");
+
+          // 如果用戶捲動的距離大於100px，向上縮減10%
+          if (window.scrollY > 100) {
+            headerFix.style.top = "-8%";
+          } else {
+            // 否則恢復原狀
+            headerFix.style.top = "0";
+          }
+        });
+      }
+    </script>
+    <script>
+      var ads = document.querySelectorAll("#marqueeTxt li");
+
+      // 定義當前廣告的索引
+      var currentAdIndex = 0;
+
+      // 定義廣告顯示時間和停留時間（毫秒）
+      var displayTime = 3000; // 廣告顯示時間為3秒
+      var stayTime = 3000; // 廣告停留時間為3秒
+
+      // 函數：顯示下一個廣告
+      function showNextAd() {
+        // 隱藏當前廣告
+        ads[currentAdIndex].style.display = "none";
+        // 更新當前廣告索引，如果是最後一個廣告，則返回第一個廣告
+        currentAdIndex = (currentAdIndex + 1) % ads.length;
+        // 顯示下一個廣告
+        ads[currentAdIndex].style.display = "block";
+        // 設置下一次顯示廣告的定時器
+        setTimeout(showNextAd, displayTime);
+      }
+
+      // 啟動廣告跑馬燈
+      showNextAd();
+    </script>
+  </body>
+</html>

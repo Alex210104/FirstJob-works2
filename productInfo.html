@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>productInfo</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="header-fix">
+      <div class="header">
+        <div class="header-wrap">
+          <h1>
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 1180px)" srcset="./img/logo_m.PNG" />
+                <img src="./img/LOGO.PNG" alt="" />
+              </picture>
+            </a>
+          </h1>
+          <div class="m-cartbox">
+            <a href="shopcart.html">
+              <img src="./img/cart.png" alt="" />
+            </a>
+            <a href="#">
+              <i class="bi bi-telephone" style="padding-left: 15px"></i>
+            </a>
+          </div>
+          <div class="bg01"><img src="./img/main_bg01.png" alt="" /></div>
+
+          <div class="top-box">
+            <div class="cartBox">
+              <a href="shopcart.html" class="cartToggle"
+                >我的購物車<b class="num buycar_count">0</b>項商品</a
+              >
+              <a class="orderToggle">訂單查詢</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-box">
+        <div class="nav">
+          <!--navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse left" id="navbarNav">
+                <div class="left-box">
+                  <ul class="navbar-nav menu1">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">．關於金品．</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="product.html">．產品介紹．</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">．門市據點．</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse right" id="navbarNav">
+                <div class="right-box">
+                  <ul class="navbar-nav menu2">
+                    <li class="nav-item title-news">
+                      <a class="nav-link" href="#">．最新消息．</a>
+                    </li>
+                    <li class="nav-item title-contact">
+                      <a class="nav-link" href="contact.html">．聯絡我們．</a>
+                    </li>
+                    <li class="nav-item tel title-tel">
+                      <i>(03)-8762233</i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <a href="index.html" target="_blank">
+        <img src="./img/banner.png" alt="banner"
+      /></a>
+    </div>
+    <div class="mainArea">
+      <div class="wrap">
+        <div class="contentbox row">
+          <div class="left-box col-3 product-left-box">
+            <div class="titlebox">
+              <h2>
+                <em>Products</em>
+                <strong>產品介紹</strong>
+              </h2>
+            </div>
+            <div class="classbox">
+              <ul class="classLink">
+                <li><a href="product.html" class="current">剝皮辣椒</a></li>
+                <li><a href="#">豆腐乳</a></li>
+                <li><a href="#">其他</a></li>
+                <li><a href="#">所有商品</a></li>
+              </ul>
+            </div>
+            <div class="m_classbox">
+              <div class="m_classLink">
+                <select name="products">
+                  <a href="product.html" class="current"
+                    ><option value="peeled_chili">剝皮辣椒</option></a
+                  >
+                  <a href="#"><option value="tofu">豆腐乳</option></a>
+
+                  <a href="#"><option value="others">其他</option></a>
+
+                  <a href="#"><option value="all_products">所有商品</option></a>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="right-box col-9 product-right-box">
+            <div class="productInfo row">
+              <div class="albumBox col-6">
+                <div class="Img"><img src="./img/435px.png" alt="" /></div>
+                <ul class="side-album">
+                  <li>
+                    <a href="#"><img src="./img/435px.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="introBox col-md-12 col-lg-6">
+                <h3 class="title">
+                  <strong>原味剝皮辣椒(中辣)</strong>
+                </h3>
+                <div class="Txt">
+                  花蓮必買「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品，自從上市以來各家品牌爭相模仿，但還是屹立不搖於台灣佔有第一品牌的地位，它是花蓮縣鳳林鎮的特產，不但是花蓮人都知道的食品，還外銷到日本、美國，廣受大家的喜愛‧<br />
+                  *剝皮辣椒商品無添加防腐劑 收到貨需冷藏
+                  開罐後請於一周內食用完畢
+                </div>
+                <div class="share">
+                  <b>分享：</b>
+                  <a
+                    class="fb"
+                    href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+
+                  <a
+                    class="twitter"
+                    href="https://twitter.com/share?url=URLENCODED_URL&text=原味剝皮辣椒(中辣)-金品醬園剝皮辣椒"
+                    onclick="javascript:window.open(this.href, '', '');return false;"
+                    target="_blank"
+                    title="原味剝皮辣椒(中辣)-金品醬園剝皮辣椒"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                </div>
+                <div class="ordertable">
+                  <table
+                    width="100%"
+                    border="0"
+                    cellspacing="0"
+                    cellpadding="0"
+                  >
+                    <tbody>
+                      <tr>
+                        <td width="15">
+                          <input
+                            type="radio"
+                            class="price_item_data"
+                            name="data_item_price"
+                            id="data_item_price_0"
+                            value="596"
+                            checked=""
+                          />
+                        </td>
+                        <th
+                          align="left"
+                          style="cursor: pointer"
+                          onclick="$(this).parent().find('.price_item_data').prop('checked',true);"
+                        >
+                          原味剝皮辣椒(單罐)
+                        </th>
+                        <td align="right"><b>NT $ 150</b></td>
+                        <td align="right" width="100">數量:</td>
+                        <td>
+                          <input
+                            type="number"
+                            max="999"
+                            min="1"
+                            style="max-width: 55px"
+                            required
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="orderNote">
+                  <textarea
+                    name="data_exp_order"
+                    id="data_exp_order"
+                    placeholder="如有特殊訂購需求，請填寫此欄位 (非必填)"
+                  ></textarea>
+                  <script type="text/javascript">
+                    $(function () {
+                      var $textarea = $(".orderNote").find("textarea"),
+                        defaultTxt = $textarea.text();
+                      $textarea
+                        .focus(function () {
+                          $(this).text("");
+                        })
+                        .blur(function () {
+                          if ($(this).val() == "") $(this).text(defaultTxt);
+                        });
+                    });
+                  </script>
+                </div>
+                <div class="order-btn">
+                  <a class="addCart" href="shopcart.html">加入購物車</a
+                  ><a href="index.html">回列表頁</a>
+                </div>
+              </div>
+            </div>
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  產品說明
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  規格/價目
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+                tabindex="0"
+              >
+                <div class="textEditor">
+                  「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品，自從上市以來各家品牌爭相模仿，但還是屹立不搖於台灣佔有第一品牌的地位，不但是花蓮人都知道的食品，還外銷到日本、美國，廣受大家的喜愛‧<br />
+                  金品醬園的「芝麻香油剝皮辣椒」，由於擁有二十年歷史的獨家醬料醃漬而成，在品嚐的時候，散發舌間極具豐富的美味口感，無論單獨食用或是搭配飯食，時常都令人難以抗拒，是每個人都會喜歡的佐餐良伴
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+                tabindex="0"
+              >
+                <div class="textEditor">
+                  【成份標示】
+                  <ul>
+                    <li>品 &nbsp; &nbsp; &nbsp;名：剝皮辣椒(全素)</li>
+                    <li>內 &nbsp;容 量：450公克</li>
+                    <li>
+                      內 &nbsp;容
+                      物：辣椒、醬油(非基改)、水、香油、鹽、糖、調味劑(5'一鳥嘌呤核苷磷酸二納)(5'一次黃嘌呤核苷磷酸二納)
+                    </li>
+                    <li>保存期限：可保存4個月</li>
+                    <li>有效日期：標示於瓶裝上</li>
+                  </ul>
+                  【保存方法】
+
+                  <ul>
+                    <li>
+                      本產品不含防腐劑，常溫可保存7天,
+                      收到貨請務必置於冰箱冷藏5度C以下
+                    </li>
+                    <li>開罐後請於一周內食用完畢</li>
+                    <li>
+                      本產品不添加人工色素，請勿放置於高溫日曬的環境，若顏色趨黯，屬正常現象，請安心使用
+                    </li>
+                  </ul>
+                  【注意事項】
+
+                  <ul>
+                    <li>瓶裝玻璃本身為易碎之物，開瓶時請小心</li>
+                    <li>
+                      如發現瓶蓋在未開封前，瓶蓋中間有凸起現象，此為不正常現象，請與我們連絡。
+                    </li>
+                    <li>
+                      由於金品剝皮辣椒經抽真空高溫殺菌, 瓶蓋會比較密合,
+                      訣竅是以小湯匙在瓶蓋邊緣左右撬, 使空氣進入瓶中,
+                      再敲瓶蓋四周即可順利開啟.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="tab">
+              <a href="#intro" class="current">產品說明</a>
+              <a href="#price">規格/價目</a>
+            </div>
+            <ul class="tabContent">
+              <li id="intro" style="display: list-item">
+                <div class="textEditor">
+                  「原味剝皮辣椒」是全台灣第一支剝皮辣椒產品，自從上市以來各家品牌爭相模仿，但還是屹立不搖於台灣佔有第一品牌的地位，不但是花蓮人都知道的食品，還外銷到日本、美國，廣受大家的喜愛‧<br />
+                  金品醬園的「芝麻香油剝皮辣椒」，由於擁有二十年歷史的獨家醬料醃漬而成，在品嚐的時候，散發舌間極具豐富的美味口感，無論單獨食用或是搭配飯食，時常都令人難以抗拒，是每個人都會喜歡的佐餐良伴
+                </div>
+              </li>
+              <li id="price" style="display: none">
+                <div class="textEditor">
+                  【成份標示】
+                  <ul>
+                    <li>品 &nbsp; &nbsp; &nbsp;名：剝皮辣椒(全素)</li>
+                    <li>內 &nbsp;容 量：450公克</li>
+                    <li>
+                      內 &nbsp;容
+                      物：辣椒、醬油(非基改)、水、香油、鹽、糖、調味劑(5'一鳥嘌呤核苷磷酸二納)(5'一次黃嘌呤核苷磷酸二納)
+                    </li>
+                    <li>保存期限：可保存4個月</li>
+                    <li>有效日期：標示於瓶裝上</li>
+                  </ul>
+                  【保存方法】
+
+                  <ul>
+                    <li>
+                      本產品不含防腐劑，常溫可保存7天,
+                      收到貨請務必置於冰箱冷藏5度C以下
+                    </li>
+                    <li>開罐後請於一周內食用完畢</li>
+                    <li>
+                      本產品不添加人工色素，請勿放置於高溫日曬的環境，若顏色趨黯，屬正常現象，請安心使用
+                    </li>
+                  </ul>
+                  【注意事項】
+
+                  <ul>
+                    <li>瓶裝玻璃本身為易碎之物，開瓶時請小心</li>
+                    <li>
+                      如發現瓶蓋在未開封前，瓶蓋中間有凸起現象，此為不正常現象，請與我們連絡。
+                    </li>
+                    <li>
+                      由於金品剝皮辣椒經抽真空高溫殺菌, 瓶蓋會比較密合,
+                      訣竅是以小湯匙在瓶蓋邊緣左右撬, 使空氣進入瓶中,
+                      再敲瓶蓋四周即可順利開啟.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // 使用媒體查詢檢查螢幕寬度
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        // 在桌面尺寸上啟用捲動事件監聽器
+        window.addEventListener("scroll", function () {
+          var bg01 = document.querySelector(".bg01");
+
+          // 如果用戶捲動的距離大於100px，隱藏背景
+          if (window.scrollY > 100) {
+            bg01.style.top = "-200px";
+          } else {
+            // 否則顯示背景
+            bg01.style.top = "0";
+          }
+        });
+      }
+    </script>
+    <script>
+      // 使用媒體查詢檢查螢幕寬度
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        // 在桌面尺寸上啟用捲動事件監聽器
+        window.addEventListener("scroll", function () {
+          var headerFix = document.querySelector(".header-fix");
+
+          // 如果用戶捲動的距離大於100px，向上縮減10%
+          if (window.scrollY > 100) {
+            headerFix.style.top = "-8%";
+          } else {
+            // 否則恢復原狀
+            headerFix.style.top = "0";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
